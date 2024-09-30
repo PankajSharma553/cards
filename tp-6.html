@@ -14,124 +14,7 @@
 
     <title>tp 6</title>
    
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-}
 
-a {
-    text-decoration: none;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain;
-}
-
-.card_wrapper {
-    margin-block: 30px;
-    background: rgba(215, 217, 219, 0);
-    padding-inline: 0.5rem;
-}
-
-.cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 575px;
-    width: 100%;
-    margin: 0 auto;
-    /* background-image: radial-gradient(circle farthest-corner at 92.3% 71.5%, rgba(83, 138, 214, 1) 0%, rgba(134, 231, 214, 1) 90%); */
-    text-align: center;
-    border-radius: 20px;
-    color: #ffffff;
-    border: none;
-    position: relative;
-    overflow: hidden;
-    background-color: rebeccapurple;
-    
-    
-}
-.cards::before {
-    
-        background-image: radial-gradient(circle farthest-corner at 92.3% 71.5%, rgba(83, 138, 214, 1) 0%, rgba(134, 231, 214, 1) 90%);
-        position: absolute;
-        top: -183px;
-        left: 0;
-        content: "";
-        clip-path: polygon(0 0, 80% 0%, 63% 0, 0 28%);
-        z-index: 2;
-        bottom: 0;
-        right: 261px;
-        height: 50%;
-
-}
-
-.card_icon {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    /* background-image: radial-gradient(circle farthest-corner at 92.3% 71.5%, rgb(4 46 105) 0%, rgb(14 131 110) 90%); */
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    margin-bottom: 1rem;
-}
-
-.card_icon img {
-    max-width: 140px;
-}
-
-.stars {
-    display: flex;
-    justify-content: center;
-    gap: 4px;
-    margin-bottom: 1rem;
-}
-
-.card_heading {
-    font-size: 24px;
-    font-weight: 800;
-    margin-bottom: 10px;
-}
-
-.card_offer {
-    font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-}
-
-.rating,
-.voting {
-    font-size: 1rem;
-    font-weight: 300;
-    margin-bottom: 8px;
-}
-
-.rated-star i {
-    color: gold;
-    cursor: pointer;
-}
-
-.logIn {
-    padding: 10px 30px;
-    border-radius: 8px;
-    color: #ffffff;
-    border: 1px solid;
-    display: inline-block;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-}
-
-</style>
 <body>
 
     <section class="card_wrapper">
@@ -148,7 +31,7 @@ img {
                 <p class="voting">Voices(795)</p>
                 
                 <a href="#" class="logIn">LOG IN</a>
-                <div class="stars"></div>
+                <div class="stars">
                     <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
                     <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
                     <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
