@@ -10,9 +10,10 @@
         rel="stylesheet">
     <!-- font aswesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>tp 4</title>
+
+    <title>tp 7</title>
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -31,40 +32,39 @@
             object-fit: contain;
         }
 
-        .card_wrapper {
+        .review_wrapper {
             margin-block: 30px;
             background: rgba(215, 217, 219, 0);
             padding-inline: 0.5rem;
         }
 
-        .cards {
+        .review {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             max-width: 575px;
             width: 100%;
             margin: 0 auto;
+            padding: 20px;
             text-align: center;
             border-radius: 8px;
-            border: 1px solid #001F3F;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         }
 
-        .card_left,
-        .cards_inner {
+        .review_icon {
+            width: 100%;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 55%;
+            padding: 50px 40px;
+            background-color: #dfdfdf;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+           
         }
 
-        .card_left {
-            background-color: #001F3F;
-            padding: 40px;
-            border-radius: 8px 0px 0px 8px;
-            width: 45%;
-        }
-
-        .card_icon img {
+        .review_icon img {
             max-width: 140px;
         }
 
@@ -75,13 +75,13 @@
             margin-bottom: 1rem;
         }
 
-        .card_heading {
+        .review_heading {
             font-size: 24px;
             font-weight: 800;
             margin-bottom: 10px;
         }
 
-        .card_offer {
+        .review_offer {
             font-size: 16px;
             font-weight: 500;
             margin-bottom: 0.5rem;
@@ -91,10 +91,7 @@
         .voting {
             font-size: 1rem;
             font-weight: 300;
-        }
-
-        .cards_inner {
-            padding: 12px;
+            margin-bottom: 8px;
         }
 
         .rated-star i {
@@ -105,37 +102,28 @@
         .logIn {
             padding: 10px 30px;
             border-radius: 8px;
-            color: #ffffff;
             border: 1px solid;
             display: inline-block;
             font-weight: 600;
             text-transform: uppercase;
             margin-bottom: 1rem;
-            background-color: #001F3F;
-        }
-        @media (max-width:380px) {
-            .card_left {
-                padding: 20px;
-            }
         }
     </style>
 
 <body>
 
-    <section class="card_wrapper">
-        <div class="cards">
-            <div class="card_left">
-                <div class="card_icon">
-                    <img src="./assets/images/vegasino-logo.webp" alt="logo">
-                </div>
+    <section class="review_wrapper">
+        <div class="review">
+            <h6 class="review_heading">
+                Első Befizetési Bónusz
+            </h6>
+            <p class="review_offer">100% Akár 35,000 FT</p>
+            <div class="review_icon">
+                <img src="./assets/images/vegasino-logo.webp" alt="logo">
             </div>
-            <div class="cards_inner">
-                <h6 class="card_heading">
-                    Első Befizetési Bónusz
-                </h6>
-                <p class="card_offer">100% Akár 35,000 FT</p>
-                <p class="rating">rating <span>9.9</span></p>
+            <div class="review_inner">
                 <p class="voting">Voices(795)</p>
+                <p class="rating">rating <span>9.9</span></p>
                 <div class="stars">
                     <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
                     <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
