@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- google font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- font aswesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>tp 11</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+        }
+
+        .detail_wrapper {
+            margin-block: 30px;
+            background: rgba(215, 217, 219, 0);
+            padding-inline: 0.5rem;
+        }
+
+        .detail {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 575px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        .detail_left,
+        .detail_right {
+            width: 50%;
+        }
+
+        .detail_left {
+            border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1;
+            border-right: 2px solid;
+        }
+
+        .detail_icon {
+            max-width: 140px;
+            margin-bottom: 12px;
+        }
+
+        .detail_icon img {
+            max-width: 140px;
+        }
+
+        .detail_inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            border-radius: 8px;
+            padding-inline: 4px;
+            border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1;
+            border-width: 2px;
+            border-style: solid;
+        }
+
+        .stars {
+            display: flex;
+            justify-content: center;
+            gap: 4px;
+            margin-bottom: 1rem;
+            margin-top: 4px;
+        }
+
+        .detail_heading {
+            font-size: 18px;
+            font-weight: 800;
+            margin-block: 10px;
+        }
+
+        .detail_offer {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .detail_rating,
+        .detail_voting {
+            font-size: 1rem;
+            font-weight: 300;
+        }
+
+        .detail_voting {
+            margin-bottom: 4px;
+        }
+
+        .rated-star i {
+            color: gold;
+            cursor: pointer;
+        }
+
+        .logIn {
+            padding: 10px 30px;
+            border: 1px solid;
+            display: inline-block;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            color: #000000;
+            border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1;
+            border-width: 1px;
+            border-style: solid;
+            background-color: #ffff
+        }
+    </style>
+
+<body>
+
+    <section class="detail_wrapper">
+        <div class="detail">
+            <div class="detail_icon">
+                <img src="./assets/images/vegasino-logo.webp" alt="logo">
+            </div>
+            <div class="detail_inner">
+                <div class="detail_left">
+                    <h6 class="detail_heading">
+                        Első Befizetési Bónusz
+                    </h6>
+                    <p class="detail_offer">100% Akár 35,000 FT</p>
+
+                    <a href="#" class="logIn">LOG IN</a>
+                </div>
+                <div class="detail_right">
+                    <p class="detail_voting">Voices(795)</p>
+                    <p class="detail_rating">rating <span>9.9</span></p>
+                    <div class="stars">
+                        <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+
+</html>
