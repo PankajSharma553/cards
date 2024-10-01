@@ -13,7 +13,6 @@
 
     <title>tp 7</title>
     <style>
-
         * {
             margin: 0;
             padding: 0;
@@ -57,11 +56,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 50px 40px;
+            padding: 30px 40px;
             background-color: #dfdfdf;
             border-radius: 8px;
             margin-bottom: 1rem;
-           
         }
 
         .review_icon img {
@@ -87,11 +85,18 @@
             margin-bottom: 0.5rem;
         }
 
+        .review_info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+
         .rating,
         .voting {
             font-size: 1rem;
             font-weight: 300;
-            margin-bottom: 8px;
         }
 
         .rated-star i {
@@ -107,6 +112,7 @@
             font-weight: 600;
             text-transform: uppercase;
             margin-bottom: 1rem;
+            color: #000000;
         }
     </style>
 
@@ -122,8 +128,10 @@
                 <img src="./assets/images/vegasino-logo.webp" alt="logo">
             </div>
             <div class="review_inner">
-                <p class="voting">Voices(795)</p>
-                <p class="rating">rating <span>9.9</span></p>
+                <div class="review_info">
+                    <p class="voting">Voices(795)</p>
+                    <p class="rating">rating <span>9.9</span></p>
+                </div>
                 <div class="stars">
                     <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
                     <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
