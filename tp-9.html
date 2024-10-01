@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- google font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- font aswesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>tp 9</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+        }
+
+        .info_wrapper {
+            margin-block: 30px;
+            background: rgba(215, 217, 219, 0);
+            padding-inline: 0.5rem;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 575px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        .info_left,
+        .info_right {
+            width: 50%;
+        }
+
+        .info_icon {
+            max-width: 140px;
+            margin-bottom: 12px;
+        }
+
+        .info_icon img {
+            max-width: 140px;
+        }
+
+        .info_inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            border-radius: 8px;
+            padding: 1rem 4px;
+            border: 1px solid #000000;
+        }
+
+        .stars {
+            display: flex;
+            justify-content: center;
+            gap: 4px;
+            margin-bottom: 1rem;
+            margin-top: 4px;
+        }
+
+        .info_heading {
+            font-size: 18px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .info_offer {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .info_rating,
+        .info_voting {
+            font-size: 1rem;
+            font-weight: 300;
+        }
+
+        .info_voting {
+            margin-bottom: 4px;
+        }
+
+        .rated-star i {
+            color: gold;
+            cursor: pointer;
+        }
+
+        .logIn {
+            padding: 10px 30px;
+            border-radius: 8px;
+            border: 1px solid;
+            display: inline-block;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            color: #000000;
+        }
+    </style>
+
+<body>
+
+    <section class="info_wrapper">
+        <div class="info">
+            <div class="info_icon">
+                <img src="./assets/images/vegasino-logo.webp" alt="logo">
+            </div>
+            <div class="info_inner">
+                <div class="info_left">
+                    <h6 class="info_heading">
+                        Első Befizetési Bónusz
+                    </h6>
+                    <p class="info_offer">100% Akár 35,000 FT</p>
+
+                    <a href="#" class="logIn">LOG IN</a>
+                </div>
+                <div class="info_right">
+                    <p class="info_voting">Voices(795)</p>
+                    <p class="info_rating">rating <span>9.9</span></p>
+                    <div class="stars">
+                        <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+
+</html>
