@@ -11,7 +11,7 @@
     <!-- font aswesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>tp 8</title>
+    <title>tp 12</title>
     <style>
         * {
             margin: 0;
@@ -31,13 +31,13 @@
             object-fit: contain;
         }
 
-        .feedback_wrapper {
+        .detail_wrapper {
             margin-block: 30px;
             background: rgba(215, 217, 219, 0);
             padding-inline: 0.5rem;
         }
 
-        .feedback {
+        .detail {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -48,33 +48,38 @@
             padding: 20px;
             text-align: center;
             border-radius: 8px;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
 
-        .feedback_icon {
-            width: 40%;
-
+        .detail_left,
+        .detail_right { 
+            width: 50%;
         }
 
-        .feedback_icon img {
+        .detail_left {
+            border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1;
+            border-left: 2px solid;
+        }
+
+        .detail_icon {
+            max-width: 140px;
+            margin-bottom: 12px;
+        }
+
+        .detail_icon img {
             max-width: 140px;
         }
-
-        .feedback_inner {
+        .detail_inner {
             display: flex;
             justify-content: space-between;
+           flex-direction: row-reverse;
             align-items: center;
             width: 100%;
-            margin-bottom: 1rem;
             border-radius: 8px;
-            padding: 1rem;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            background-color: #000000;
-            color: #ffffff;
-        }
-
-        .feedback_info {
-            width: 60%;
+            padding-inline: 4px;
+            border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1;
+            border-width: 2px;
+            border-style: solid;
         }
 
         .stars {
@@ -82,27 +87,28 @@
             justify-content: center;
             gap: 4px;
             margin-bottom: 1rem;
+            margin-top: 4px;
         }
 
-        .feedback_heading {
-            font-size: 20px;
-            font-weight: 700;
-            margin-bottom: 10px;
+        .detail_heading {
+            font-size: 18px;
+            font-weight: 800;
+            margin-block: 10px;
         }
 
-        .feedback_offer {
+        .detail_offer {
             font-size: 16px;
             font-weight: 500;
             margin-bottom: 0.5rem;
         }
 
-        .feedback_rating,
-        .feedback_voting {
+        .detail_rating,
+        .detail_voting {
             font-size: 1rem;
             font-weight: 300;
         }
 
-        .feedback_voting {
+        .detail_voting {
             margin-bottom: 4px;
         }
 
@@ -113,43 +119,47 @@
 
         .logIn {
             padding: 10px 30px;
-            border-radius: 8px;
             border: 1px solid;
             display: inline-block;
             font-weight: 600;
             text-transform: uppercase;
             margin-bottom: 1rem;
             color: #000000;
+            border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1;
+            border-width: 1px;
+            border-style: solid;
+            background-color: #ffff
         }
     </style>
 
 <body>
 
-    <section class="feedback_wrapper">
-        <div class="feedback">
-            <p class="feedback_offer">100% Akár 35,000 FT</p>
-            <h6 class="feedback_heading">
-                Első Befizetési Bónusz
-            </h6>
-            <div class="feedback_inner">
-                <div class="feedback_icon">
-                    <img src="./assets/images/vegasino-logo.webp" alt="logo">
+    <section class="detail_wrapper">
+        <div class="detail">
+            <div class="detail_icon">
+                <img src="./assets/images/vegasino-logo.webp" alt="logo">
+            </div>
+            <div class="detail_inner">
+                <div class="detail_left">
+                    <h6 class="detail_heading">
+                        Első Befizetési Bónusz
+                    </h6>
+                    <p class="detail_offer">100% Akár 35,000 FT</p>
+
+                    <a href="#" class="logIn">LOG IN</a>
                 </div>
-                <div class="feedback_info">
-                    <p class="feedback_voting">Voices(795)</p>
-                    <p class="feedback_rating">rating <span>9.9</span></p>
+                <div class="detail_right">
+                    <p class="detail_voting">Voices(795)</p>
+                    <p class="detail_rating">rating <span>9.9</span></p>
+                    <div class="stars">
+                        <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+                    </div>
                 </div>
             </div>
-
-            <div class="stars">
-                <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
-                <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
-                <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
-                <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
-                <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
-            </div>
-            <a href="#" class="logIn">LOG IN</a>
-
         </div>
     </section>
 

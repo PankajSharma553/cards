@@ -28,29 +28,30 @@
             object-fit: contain;
         }
 
-        .card_wrapper {
+        .rating_wrapper {
             margin-block: 30px;
             background: rgba(215, 217, 219, 0);
         }
 
-        .cards {
-            margin: 0 auto;
-            max-width: 575px;
-            width: 100%;
+        .rating {
             display: flex;
             justify-content: space-between;
             text-align: center;
-            background-color: #f3c242;
+            flex-direction: row-reverse;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             border-radius: 0.5rem;
+            margin: 0 auto;
+            max-width: 575px;
+            width: 100%;
         }
 
-        .card_left {
+        .rating_left {
             padding: 12px 24px;
+            background-image: linear-gradient(68.6deg, rgba(79, 183, 131, 1) 14.4%, rgba(254, 235, 151, 1) 92.7%);
         }
 
-        .card_right,
-        .card_left {
+        .rating_right,
+        .rating_left {
             padding: 1.5rem;
             display: flex;
             flex-direction: column;
@@ -59,18 +60,18 @@
             width: 50%;
         }
 
-        .card_left h5 {
+        .rating_left h5 {
             font-size: 16px;
             margin-bottom: 0.5rem;
         }
 
-        .card_logo {
+        .rating_logo {
             margin-bottom: 1.5rem;
-            max-width: 140px;
             width: 100%;
+            max-width: 140px;
         }
 
-        .logo_img {
+        .rating_img {
             max-width: 140px;
         }
 
@@ -83,38 +84,40 @@
             font-weight: 700;
         }
 
-        .rating {
+        .rating_review {
             font-size: 20px;
             font-weight: 700;
         }
 
-        .card_heading {
+        .rating_heading {
             margin-bottom: 0.8rem;
-            font-size: 1rem;
+            font-size: 20px;
         }
 
         .offer {
             font-size: 18px;
             font-weight: 500;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
         }
 
         .singUpLink {
             padding: 12px 20px;
             border-radius: 8px;
-            color: #000000;
-            background-color: white;
-            border-color: transparent;
             display: inline-block;
-            font-weight: 500;
+            font-weight: 600;
             text-transform: uppercase;
+            color: #ffffff;
+            border: none;
+            font-size: 12px;
+            background-image: linear-gradient(68.6deg, rgba(79, 183, 131, 1) 14.4%, rgba(254, 235, 151, 1) 92.7%);
         }
+
 
         /* media query 380*/
         @media (max-width:380px) {
 
-            .card_right,
-            .card_left {
+            .rating_right,
+            .rating_left {
                 padding: 16px;
             }
 
@@ -129,20 +132,21 @@
 </head>
 
 <body>
-    <section class="card_wrapper">
-        <div class="cards">
-            <div class="card_left">
-                <div class="card_logo"> <a href="" target="_blank"><img src="./assets/images/vegasino-logo.webp"
+
+    <section class="rating_wrapper">
+        <div class="rating">
+            <div class="rating_left ">
+                <div class="rating_logo"> <a href="" target="_blank"><img src="./assets/images/vegasino-logo.webp"
                             alt="logo" class="logo_img">
                     </a>
                 </div>
                 <h5>Szavazatokat
                     (725)
                 </h5>
-                <p class="left_desc">Értékelés<span class="rating">9.9</span></p>
+                <p class="left_desc">Értékelés<span class="rating_review">9.9</span></p>
             </div>
-            <div class="card_right">
-                <h3 class="card_heading">
+            <div class="rating_right">
+                <h3 class="rating_heading">
                     Első Befizetési Bónusz
                 </h3>
                 <p class="offer">100% Akár 35,000 FT</p>
@@ -153,6 +157,7 @@
             </div>
         </div>
     </section>
+
 </body>
 
 </html>
