@@ -31,13 +31,13 @@
             object-fit: contain;
         }
 
-        .card_wrapper {
+        .comment_wrapper {
             margin-block: 30px;
             background: rgba(215, 217, 219, 0);
             padding-inline: 0.5rem;
         }
 
-        .cards {
+        .comments {
             display: flex;
             justify-content: space-between;
             max-width: 575px;
@@ -48,8 +48,8 @@
             border: 1px solid #001F3F;
         }
 
-        .card_left,
-        .cards_inner {
+        .comment_left,
+        .comments_inner {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -57,14 +57,14 @@
             width: 55%;
         }
 
-        .card_left {
+        .comment_left {
             background-color: #001F3F;
             padding: 40px;
             border-radius: 8px 0px 0px 8px;
             width: 45%;
         }
 
-        .card_icon img {
+        .comment_icon img {
             max-width: 140px;
         }
 
@@ -75,25 +75,25 @@
             margin-bottom: 1rem;
         }
 
-        .card_heading {
+        .comment_heading {
             font-size: 20px;
             font-weight: 600;
             margin-bottom: 10px;
         }
 
-        .card_offer {
+        .comment_offer {
             font-size: 16px;
             font-weight: 500;
             margin-bottom: 0.5rem;
         }
 
-        .rating,
-        .voting {
+        .comment_rating,
+        .comment_voting {
             font-size: 1rem;
             font-weight: 300;
         }
 
-        .cards_inner {
+        .comments_inner {
             padding: 12px;
         }
 
@@ -114,7 +114,7 @@
             background-color: #001F3F;
         }
         @media (max-width:380px) {
-            .card_left {
+            .comment_left {
                 padding: 20px;
             }
         }
@@ -122,20 +122,20 @@
 
 <body>
 
-    <section class="card_wrapper">
-        <div class="cards">
-            <div class="card_left">
-                <div class="card_icon">
+    <section class="comment_wrapper">
+        <div class="comments">
+            <div class="comment_left">
+                <div class="comment_icon">
                     <img src="./assets/images/vegasino-logo.webp" alt="logo">
                 </div>
             </div>
-            <div class="cards_inner">
-                <h6 class="card_heading">
+            <div class="comments_inner">
+                <h6 class="comment_heading">
                     Első Befizetési Bónusz
                 </h6>
-                <p class="card_offer">100% Akár 35,000 FT</p>
-                <p class="rating">rating <span>9.9</span></p>
-                <p class="voting">Voices(795)</p>
+                <p class="comment_offer">100% Akár 35,000 FT</p>
+                <p class="comment_rating">rating <span>9.9</span></p>
+                <p class="comment_voting">Voices(795)</p>
                 <div class="stars">
                     <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
                     <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>

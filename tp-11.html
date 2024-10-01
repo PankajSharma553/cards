@@ -31,13 +31,13 @@
             object-fit: contain;
         }
 
-        .detail_wrapper {
+        .score_wrapper {
             margin-block: 30px;
             background: rgba(215, 217, 219, 0);
             padding-inline: 0.5rem;
         }
 
-        .detail {
+        .score {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -49,62 +49,68 @@
             text-align: center;
             border-radius: 8px;
             background-color: gainsboro;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
 
-       
-
-        .detail_icon {
+        .score_icon {
             max-width: 140px;
             margin-bottom: 12px;
         }
 
-        .detail_icon img {
+        .score_icon img {
             max-width: 140px;
         }
-       
+
+        .score_info {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
         .stars {
             display: flex;
             justify-content: space-between;
             gap: 4px;
             border-radius: 6px;
             padding: 10px;
-            margin-bottom: 1rem;
-            margin-top: 4px;
-            background-color: #eee;
+            margin-block: 1rem;
+            background-color: #000000;
         }
 
-        .detail_heading {
+        .rated-star i {
+            color: #daa520;
+            cursor: pointer;
+        }
+
+        .score_heading {
             font-size: 20px;
             font-weight: 700;
             margin-block: 10px;
         }
 
-        .detail_offer {
+        .score_offer {
             font-size: 16px;
             font-weight: 500;
             margin-bottom: 0.5rem;
         }
 
-        .detail_rating,
-        .detail_voting {
+        .score_rating,
+        .score_voting {
             font-size: 1rem;
             font-weight: 300;
         }
-.info{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 12px;
-}
-        .detail_voting {
-            margin-bottom: 4px;
+
+        .score {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 1rem;
         }
 
-        .rated-star i {
-            color: gold;
-            cursor: pointer;
+        .score_voting {
+            margin-bottom: 4px;
         }
 
         .logIn {
@@ -115,34 +121,34 @@
             text-transform: uppercase;
             margin-bottom: 1rem;
             color: #000000;
+            border-radius: 8px;
         }
     </style>
 
 <body>
 
-    <section class="detail_wrapper">
-        <div class="detail">
-            <div class="detail_icon">
+    <section class="score_wrapper">
+        <div class="score">
+            <div class="score_icon">
                 <img src="./assets/images/vegasino-logo.webp" alt="logo">
             </div>
-            <div class="detail_inner">
-                    <h6 class="detail_heading">
-                        Első Befizetési Bónusz
-                    </h6>
-                    <p class="detail_offer">100% Akár 35,000 FT</p>
-                    <div class="stars">
-                        <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
-                        <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
-                        <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
-                        <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
-                        <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
-                    </div>
-           
-             
-                   <div class="info"> <p class="detail_voting">Voices(795)</p>
-                    <p class="detail_rating">rating <span>9.9</span></p></div>
-                    <a href="#" class="logIn">LOG IN</a>
-               
+            <div class="score_inner">
+                <h6 class="score_heading">
+                    Első Befizetési Bónusz
+                </h6>
+                <p class="score_offer">100% Akár 35,000 FT</p>
+                <div class="stars">
+                    <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+                    <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+                    <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+                    <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+                    <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+                </div>
+                <div class="score_info">
+                    <p class="score_voting">Voices(795)</p>
+                    <p class="score_rating">rating <span>9.9</span></p>
+                </div>
+                <a href="#" class="logIn">LOG IN</a>
             </div>
         </div>
     </section>

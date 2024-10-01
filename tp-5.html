@@ -31,13 +31,13 @@
             object-fit: contain;
         }
 
-        .card_wrapper {
+        .experience_wrapper {
             margin-block: 30px;
             background: rgba(215, 217, 219, 0);
             padding-inline: 0.5rem;
         }
 
-        .cards {
+        .experiences {
             display: flex;
             justify-content: space-between;
             max-width: 575px;
@@ -48,8 +48,8 @@
             border: 1px solid #001F3F;
         }
 
-        .card_left,
-        .cards_inner {
+        .experience_left,
+        .experiences_inner {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -57,14 +57,14 @@
             width: 55%;
         }
 
-        .card_left {
+        .experience_left {
             background-color: #001F3F;
             padding: 40px;
             border-radius: 8px 0px 0px 8px;
             width: 45%;
         }
 
-        .card_icon img {
+        .experience_icon img {
             max-width: 140px;
         }
 
@@ -75,25 +75,25 @@
             margin-bottom: 1rem;
         }
 
-        .card_heading {
+        .experience_heading {
             font-size: 16px;
             font-weight: 700;
             margin-bottom: 10px;
         }
 
-        .card_offer {
+        .experience_offer {
             font-size: 16px;
             font-weight: 500;
             margin-bottom: 0.5rem;
         }
 
-        .rating,
-        .voting {
+        .experience_rating,
+        .experience_voting {
             font-size: 1rem;
             font-weight: 300;
         }
 
-        .cards_inner {
+        .experiences_inner {
             padding: 12px;
         }
 
@@ -102,8 +102,8 @@
             cursor: pointer;
         }
 
-        .card_btm,
-        .card_info {
+        .experience_btm,
+        .experience_info {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -124,8 +124,8 @@
         }
 
         @media(max-width:480px) {
-            .card_btm,
-            .card_info {
+            .experience_btm,
+            .experience_info {
                 flex-direction: column;
                 gap: 8px;
                 margin-bottom: 4px;
@@ -142,7 +142,7 @@
         }
 
         @media (max-width:380px) {
-            .card_left {
+            .experience_left {
                 padding: 20px;
             }
         }
@@ -150,23 +150,23 @@
 
 <body>
 
-    <section class="card_wrapper">
-        <div class="cards">
-            <div class="card_left">
-                <div class="card_icon">
+    <section class="experience_wrapper">
+        <div class="experiences">
+            <div class="experience_left">
+                <div class="experience_icon">
                     <img src="./assets/images/vegasino-logo.webp" alt="logo">
                 </div>
             </div>
-            <div class="cards_inner">
-                <h6 class="card_heading">
+            <div class="experiences_inner">
+                <h6 class="experience_heading">
                     Első Befizetési Bónusz
                 </h6>
-                <p class="card_offer">100% Akár 35,000 FT</p>
-                <div class="card_info">
-                    <p class="rating">rating <span>9.9</span></p>
-                    <p class="voting">Voices(795)</p>
+                <p class="experience_offer">100% Akár 35,000 FT</p>
+                <div class="experience_info">
+                    <p class="experience_rating">rating <span>9.9</span></p>
+                    <p class="experience_voting">Voices(795)</p>
                 </div>
-                <div class="card_btm">
+                <div class="experience_btm">
                     <div class="stars">
                         <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
                         <div class="rated-star"><i class="fa fa-star" aria-hidden="true"></i></div>
