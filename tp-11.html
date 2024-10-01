@@ -52,13 +52,13 @@
         }
 
         .detail_left,
-        .detail_right {
+        .detail_right { 
             width: 50%;
         }
 
         .detail_left {
             border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1;
-            border-right: 2px solid;
+            border-left: 2px solid;
         }
 
         .detail_icon {
@@ -73,6 +73,7 @@
         .detail_inner {
             display: flex;
             justify-content: space-between;
+           flex-direction: row-reverse;
             align-items: center;
             width: 100%;
             border-radius: 8px;
